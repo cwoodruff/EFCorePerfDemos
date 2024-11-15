@@ -91,9 +91,6 @@ public class Program
                 Task.WaitAny(l.ToArray());
             },
             name: "DBContext Async Compiled EF Core Query");
-        
-        // dotnet run --project .\compiled-query.csproj -c Release
-        //var summary = BenchmarkRunner.Run<CmpldQryBenchmark>();
     }
     
     private static void RunTest(Action<int[]> test, string name)
